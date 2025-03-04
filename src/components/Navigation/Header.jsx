@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 
 const Header = () => {
   return (
@@ -14,24 +15,25 @@ const Header = () => {
               <a href="#topics" className="nav-link active">Topics</a>
             </li>
             <li className="nav-item">
-              <a href="#stractivors" className="nav-link">Stractivors</a>
+              <a href="#sources" className="nav-link">Sources</a>
             </li>
             <li className="nav-item">
-              <a href="#hope" className="nav-link">Hope</a>
+              <a href="#verify" className="nav-link">Verify</a>
             </li>
             <li className="nav-item">
-              <a href="#coweeting" className="nav-link">Coweeting</a>
-            </li>
-            <li className="nav-item">
-              <a href="#latest" className="nav-link">Latest Stories</a>
+              <a href="#discussions" className="nav-link">Discussions</a>
             </li>
           </ul>
         </nav>
       </div>
       
       <div className="header-right">
-        <div className="search-icon">
-          <span className="icon">🔍</span>
+        <div className="search-bar">
+          <input type="text" placeholder="Search topics, sources..." />
+          <button className="search-button">🔍</button>
+        </div>
+        <div className="user-menu">
+          <button className="user-button">Sign In</button>
         </div>
       </div>
     </header>
