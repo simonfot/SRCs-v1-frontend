@@ -1,0 +1,140 @@
+.explore-panel {
+  background-color: #ffffff;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  height: calc(100vh - 120px);
+}
+
+.explore-panel .panel-inner {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.explore-panel .panel-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.explore-panel .panel-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.topics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.topic-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.2s ease;
+  border: 1px solid #eee;
+}
+
+.topic-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-color: #ddd;
+}
+
+.topic-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.topic-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.topic-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #888;
+}
+
+.topic-sources {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.topic-activity {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.topic-activity.high {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.topic-activity.medium {
+  background-color: #fff8e1;
+  color: #ffa000;
+}
+
+.topic-activity.low {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.view-more-button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-more-button:hover {
+  background-color: #e9e9e9;
+  border-color: #ccc;
+}
+
+.explore-panel.active {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .explore-panel {
+    width: 100% !important; /* Override inline width on mobile */
+    height: auto;
+    margin-bottom: 16px;
+  }
+  
+  .explore-panel .panel-inner {
+    padding: 16px;
+  }
+  
+  .explore-panel .panel-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
