@@ -1,0 +1,79 @@
+.topic-nav {
+  background-color: #f5f7fa;
+  padding: 12px 24px;
+  position: sticky;
+  top: 70px;
+  z-index: 50;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.topic-nav-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+}
+
+.topic-nav-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.topic-nav-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.topic-nav-container::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+.topic-button {
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.topic-button:hover {
+  background-color: #f0f0f0;
+  border-color: #d0d0d0;
+}
+
+.topic-button.active {
+  background-color: #1976d2;
+  color: white;
+  border-color: #1976d2;
+}
+
+.topic-button.more {
+  background-color: transparent;
+  border: 1px dashed #1976d2;
+  color: #1976d2;
+}
+
+.topic-button.more:hover {
+  background-color: rgba(25, 118, 210, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .topic-nav {
+    padding: 10px 16px;
+  }
+  
+  .topic-button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
