@@ -1,0 +1,152 @@
+.node-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90vw;
+  max-height: 80vh;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.node-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.node-details-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.node-details-content {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.node-details-content h4 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #333;
+}
+
+.credibility-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.credibility-tag[data-credibility="high"] {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #2e7d32;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.credibility-tag[data-credibility="medium"] {
+  background-color: rgba(255, 235, 59, 0.1);
+  color: #f57f17;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.credibility-tag[data-credibility="low"] {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #c62828;
+  border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.details-section {
+  margin-bottom: 24px;
+}
+
+.details-section h5 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.metadata-list, .references-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.metadata-list li, .references-list li {
+  margin-bottom: 6px;
+}
+
+.metadata-key {
+  font-weight: 500;
+  color: #666;
+}
+
+.references-list a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.references-list a:hover {
+  text-decoration: underline;
+}
+
+.action-buttons {
+  display: flex;
+  margin-top: 24px;
+  gap: 12px;
+}
+
+.action-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.view-source {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.view-source:hover {
+  background-color: #bbdefb;
+}
+
+.add-highlight {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.add-highlight:hover {
+  background-color: #c8e6c9;
+}
